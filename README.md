@@ -85,6 +85,15 @@ grant_type=password
 }
 ```
 
+### Accesing API Docs
+
+To access the docs just go this url on your browser:
+```
+https://localhost:8443/docs
+```
+
+and you will see the API with Response and Request Models and Info.
+
 ## What to Pay Attention to
 
 
