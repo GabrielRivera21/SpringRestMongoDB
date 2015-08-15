@@ -13,7 +13,7 @@ You will need to download and install correctly the following programs.
 On your Terminal or Git Shell execute the following command on the directory where you want to clone the project.
 
 ```bash
-$ git clone https://github.com/GabrielRivera21/ChatAppFx.git
+$ git clone https://github.com/GabrielRivera21/SpringRestMongoDB.git
 ```
 
 ##### Import the Project to Eclipse
@@ -50,13 +50,11 @@ Note: you need to use "https" and port "8443":
 
 https://localhost:8443/users
 
-https://localhost:8443/projects
-
 You will almost certainly see a warning about the site's certificate in your browser. This warning is being generated because the keystore includes a certificate that has not been signed by a certificate authority.
 
 If you try to access the above URL in your browser, the server is going to generate an error that looks something like "An Authentication object was not found in the SecurityContext." If you want to use your browser to test the service, you will need to use a plug-in like Postman and an understanding of how to use it to manually construct and obtain a bearer token.
 
-The UsersSvcClientApiTest and ProjectsSvcClientApiTest shows how to programmatically access the services. You should look at the SecuredRestBuilder class that is used to automatically intercept requests to the UsersSvcApi methods, automatically obtain an OAuth 2.0 bearer token if needed, and add this bearer token to HTTP requests.
+The UsersSvcClientApiTest shows how to programmatically access the services. You should look at the SecuredRestBuilder class that is used to automatically intercept requests to the UsersSvcApi methods, automatically obtain an OAuth 2.0 bearer token if needed, and add this bearer token to HTTP requests.
 
 ###Obtaining the OAuth2 Token
 
@@ -70,7 +68,7 @@ Content-Type: application/x-www-form-urlencoded
 
 username=youruser&
 password=yourpass&
-client_id=mobile-matefix&
+client_id=mobile-spring&
 client_secret=&
 grant_type=password
 ```
